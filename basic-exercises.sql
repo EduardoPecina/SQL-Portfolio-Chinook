@@ -72,8 +72,8 @@ ORDER BY Year ASC;
 -- 12. How many invoice lines did the invoice with ID 37 have?
 SELECT InvoiceId, COUNT(InvoiceLineId) AS Total_Rows
 FROM invoice_items
-WHERE invoiceId = '37'
-GROUP BY InvoiceId
+WHERE InvoiceId = 37
+GROUP BY InvoiceId;
 -- 13. How many invoice lines did each invoice ID have?
 SELECT InvoiceId, COUNT(InvoiceLineId) AS Total_Rows
 FROM invoice_items
